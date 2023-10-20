@@ -1,3 +1,13 @@
 [build]
-base = "/"
-publish = "public" # Set this to your public folder if you have one
+base = "arcade/public"    # Set the base directory to your main project's "public" folder
+publish = "arcade/public" # Set the publish directory to your main project's "public" folder
+
+[[redirects]]
+from = "/*"
+to = "/public/:splat"
+status = 200
+
+[[redirects]]
+from = "/games/*"
+to = "/games/:splat"
+status = 200
