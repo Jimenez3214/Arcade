@@ -1,0 +1,3 @@
+[build]
+base = "/"
+publish = "public" # Set this to your public folder if you have one
