@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="description" content="JS Language Learning Game - Showing the Score">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Fun Language Learning Game!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../Arcade.html">
+  <button id="goBackButton" class="go-back-button">Go back to main menu</button>
+</a>
+  <div id="overlay" class="overlay" style="display: block;">
+    <div class="modal">
+      <div id="modal-content">
+        <h1>Welcome to the Language Learning Game</h1>
+        <p>Click the button below to start the game.</p>
+        <button id="startButton">Start Game</button>
+      </div>
+      <button id="modal-restart" style="display: none;">Restart</button>
+    </div>
+  </div>
+  <div id="wrapper" style="display: none;">
+    <div id="title"></div>
+    <ul>
+      <li class="alternative"></li>
+      <li class="alternative"></li>
+      <li class="alternative"></li>
+      <li class="alternative"></li>
+    </ul>
+    <div id="button-container">
+      <button id="nextButton">Next</button>
+    </div>
+    <div id="result"></div>
+    <div id="score"></div>
+    <div id="questionNumber"></div>
+  </div>
+  <script type="module" src="index.js"></script>
+  <script type="module" src="questions.js"></script>
+</body>
+</html>
+

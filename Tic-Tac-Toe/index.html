@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <a href="../Arcade.html">
+        <button id="goBackButton" class="go-back-button">Go back to main menu</button>
+      </a>
+    <div id="game">
+        <h1>Tic-Tac-Toe</h1>
+        <div>
+            <label for="playerType">Select player type:</label>
+            <select id="playerType" onchange="togglePlayer()">
+                <option value="ai">Play Against AI</option>
+                <option value="human">Play Against Human</option>
+            </select>
+        </div>
+        <div id="board">
+                <div cellIdx = "0" class="cell"></div>
+                <div cellIdx = "1" class="cell"></div>
+                <div cellIdx = "2" class="cell"></div>
+                <div cellIdx = "3" class="cell"></div>
+                <div cellIdx = "4" class="cell"></div>
+                <div cellIdx = "5" class="cell"></div>
+                <div cellIdx = "6" class="cell"></div>
+                <div cellIdx = "7" class="cell"></div>
+                <div cellIdx = "8" class="cell"></div>
+        </div>
+        <br>
+        <h2 id="currentPlayer"></h2>
+        <button id="resetBtn">reset</button>
+    </div>
+</body>
+</html>

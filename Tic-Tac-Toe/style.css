@@ -1,0 +1,53 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family:fantasy;
+    background-color: #93e8ff;
+}
+
+#board{
+    margin:0px;
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-template-rows: 35% 35% 35%;
+    max-width: 400px;
+    font-size: 45px;
+} 
+#game{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cell{
+    border: 1px solid black;
+    min-width: 100px;
+    min-height: 100px;
+    background-color: #93e8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+#currentP{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+button{
+    background-color: #8ee5e6;
+    width: 100px;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+    
+}
+
+#playerType {
+margin: 10px;
+}

@@ -1,0 +1,73 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('background.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* Style a container for all game containers */
+.games {
+    display: flex;
+    justify-content: space-around; /* Adjust this property to control the spacing between game containers */
+    padding: 20px; /* Add some space around the containers */
+}
+
+/* Style each game container */
+.game-container {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px; /* Adjust the width as needed for square containers */
+    height: 200px; /* Adjust the height to match the width for square containers */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the game images to fill the container */
+.game-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px; /* Add rounded corners to the image if desired */
+}
+
+/* Style the game titles */
+.game-container h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: white;
+}
+
+/* Style the game descriptions */
+.game-container p {
+    color: white;
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Style the game links */
+.game-container a {
+    display: inline-block;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: auto; /* Push the link to the bottom */
+}
+
+/* Hover effect for game links */
+.game-container a:hover {
+    background-color: #0055aa;
+}
